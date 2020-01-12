@@ -1,12 +1,12 @@
 .skills {
     max-width: 1184px;
-    margin: 0 auto;
+    margin: 0 auto 8rem;
     &__title {
         font-size: 2.25rem;
         margin: 0;
         font-weight: 600;
         padding: 1rem 0;
-        border-bottom: solid 2px #8BAEB6;
+        border-bottom: solid 2px $bali-hai;
         margin-bottom: 128px;
     }
 }
