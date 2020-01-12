@@ -14,7 +14,7 @@ fetch ('https://api.github.com/users/katarzynagodlewska/repos?sort=updated&direc
                         <img class="project__logo" src="assets/img/github.svg" alt="">
                         <h3 class="project__title">${name}</h3>
                         ${
-                            description ? `<p class="project__description href="${description}</p>` : 'No description'
+                            description ? `<p class="project__description">${description}</p>` : `<p class="project__description">No description 😔</p>`
                         }
                         </div>
                         <div class="project__footer">
