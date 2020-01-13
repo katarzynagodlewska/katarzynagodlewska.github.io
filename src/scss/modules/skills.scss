@@ -9,6 +9,9 @@
         padding: 1rem 0;
         border-bottom: solid 2px $bali-hai;
         margin-bottom: 128px;
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
     }
 }
 
@@ -16,12 +19,20 @@
     padding: 8rem 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: .5rem;
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        padding: 5rem 0 0;
+    }
     &__item {
         font-style: normal;
         font-weight: normal;
         font-size: 1.125rem;
         padding: 11px 0 11px 30px;
         position: relative;
+        @media (max-width: $mobile) {
+            padding-left: 20px;
+        }
         &::before {
             position: absolute;
             top: 10px;
@@ -32,17 +43,23 @@
             height: 18px;
             background: url('../assets/img/check-circle-1.svg');
             .skills-list--light-sea-green & {
-                background: url('../assets/img/check-circle-2.svg');
+                background-image: url('../assets/img/check-circle-2.svg');
             }
             .skills-list--teal & {
-                background: url('../assets/img/check-circle-3.svg');
+                background-image: url('../assets/img/check-circle-3.svg');
             }
-
+            @media (max-width: $mobile) {
+                width: 12px;
+                height: 12px;
+                top: 11px;
+                background-size: contain;
+                
+            }
         }
     }
     &__list {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         list-style-type: none;
         padding: 0;
         margin-top: calc(1.5rem + 4px);
