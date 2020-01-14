@@ -361,8 +361,7 @@ template {
     margin: 0;
     font-weight: 600;
     padding: 1rem 0;
-    border-bottom: solid 2px #8BAEB6;
-    margin-bottom: 128px; }
+    border-bottom: solid 2px #8BAEB6; }
     @media (max-width: 768px) {
       .skills__title {
         text-align: center; } }
